@@ -15,7 +15,7 @@ app.get('/', (req, res) => res.render('pages/index'))
 //app.get('/', (req, res) => res.send('Hello World!'))
 
 // start the server listening
-app.listen(PORT, () => console.log('Listening on ${ PORT }'))
+app.listen(PORT, () => console.log('Listening on ${PORT}'))
 
 //error handler
 app.use(function (err, req, res, next) {
