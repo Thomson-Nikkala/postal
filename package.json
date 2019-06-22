@@ -4,7 +4,7 @@
     "description": "A postage calculator",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node index.js"
     },
     "author": "",
@@ -18,4 +18,8 @@
         "type": "git",
         "url": "https://github.com/Thomson-Nikkala/postal"
     },
+    "engines": {
+        "node": "10.16.0",
+        "npm": "6.9.0"
+    }
 }
