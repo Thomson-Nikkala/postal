@@ -1,5 +1,5 @@
 {
-    "name": "week9lab",
+    "name": "postal week 9",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -9,7 +9,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "cool-ascii-faces": "^1.3.4",
+        "ejs": "^2.6.2",
         "express": "^4.17.1"
     }
 }
