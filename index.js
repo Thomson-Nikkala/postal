@@ -13,11 +13,9 @@ app.set('view engine', 'ejs')
 //res.render compiles your template, inserts locals, and creates html
 app.get('/', (req, res) => res.render('pages/index'))
 //app.get('/', (req, res) => res.send('Hello World!'))
-//app.get('/cool', (req, res) => res.send(cool()))
+
 // start the server listening
 app.listen(PORT, () => console.log('Listening on ${ PORT }'))
-
-app.get('/', (req, res) => res.send('Hello World!'))
 
 //error handler
 app.use(function (err, req, res, next) {
