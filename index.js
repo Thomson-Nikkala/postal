@@ -2,7 +2,7 @@ const cool = require('cool-ascii-faces')
 const express = require('express')
 const path = require('path')
 const app = express()
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 5000;
 
 // tell it to use the public directory as one where static files live
 app.use(express.static(path.join(__dirname, 'public')))
