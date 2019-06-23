@@ -170,9 +170,10 @@ function computeRate(response, type, weight) {
             // not needed
     }
 
-    //if (response == 0) {
-    // redirect to invalid "weight and type" combination message
-    //}
+    if (result == 0) {
+        // redirect to invalid "weight and type" combination message
+        response.render('pages/postage_error');
+    }
 
     // Set up a JSON object of the values we want to pass along to the EJS result page
     const params = {
