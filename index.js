@@ -1,6 +1,6 @@
-const express = require('express')
-const path = require('path')
-const app = express()
+const express = require('express');
+const path = require('path');
+const app = express();
 const PORT = process.env.PORT || 3000;
 
 // tell it to use the public directory as one where static files live
@@ -13,7 +13,7 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
 //res.render compiles your template, inserts locals, and creates html
-app.get('/', (req, res) => res.render('public/form'))
+app.get('/', (req, res) => res.render('public/form.html'))
 
 // Set up a rule that says requests to '/postage' should be handled by the getPostage function below
 app.get('/postage', getRate);
