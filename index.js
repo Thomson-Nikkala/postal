@@ -166,13 +166,13 @@ function computeRate(response, type, weight) {
                 response = 10.28;
             }
             break;
-        default:
+            // default:
             // not needed
     }
 
-    if (response == 0) {
-        // redirect to invalid "weight and type" combination message
-    }
+    //if (response == 0) {
+    // redirect to invalid "weight and type" combination message
+    //}
 
     // Set up a JSON object of the values we want to pass along to the EJS result page
     const params = {
@@ -183,6 +183,6 @@ function computeRate(response, type, weight) {
 
     // Render the response, using the EJS page "result.ejs" in the pages directory
     // Makes sure to pass it the parameters we need.
-    response.render('views/pages/result', params);
+    response.render('pages/result', params);
 
 }
