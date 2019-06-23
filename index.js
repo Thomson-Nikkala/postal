@@ -16,6 +16,9 @@ app.engine('html', require('ejs').renderFile);
 // Set up a rule that says requests to '/postage' should be handled by the getPostage function below
 app.get('/postage', getRate);
 
+// Requests to calc should be handled by the getRate function
+app.get('/calc', getRate);
+
 // start the server listening
 app.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
