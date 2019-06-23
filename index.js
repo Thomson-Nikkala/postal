@@ -45,7 +45,7 @@ function getRate(request, response) {
 function computeRate(response, type, weight) {
     let result = 0;
     switch (type) {
-        case 'Stamped Letter':
+        case 'Stamped_Letter':
             if (weight <= 1.0) {
                 response = 0.55;
             } else if (weight <= 2.0) {
@@ -76,7 +76,7 @@ function computeRate(response, type, weight) {
                 response = 2.8;
             }
             break;
-        case 'Metered Letter':
+        case 'Metered_Letter':
             if (weight <= 1.0) {
                 response = 0.5;
             } else if (weight <= 2.0) {
@@ -107,7 +107,7 @@ function computeRate(response, type, weight) {
                 response = 2.8;
             }
             break;
-        case 'Large Envelope (Flat)':
+        case 'Large_Flat_Envelope':
             if (weight <= 1.0) {
                 response = 1.0;
             } else if (weight <= 2.0) {
@@ -136,7 +136,7 @@ function computeRate(response, type, weight) {
                 response = 2.8;
             }
             break;
-        case 'Retail First-class Package':
+        case 'Retail_First_Class_Package':
             if (weight <= 4.0) {
                 response = 3.6;
             } else if (weight <= 5.0) {
