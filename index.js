@@ -183,6 +183,6 @@ function computeRate(response, type, weight) {
 
     // Render the response, using the EJS page "result.ejs" in the pages directory
     // Makes sure to pass it the parameters we need.
-    response.render('pages/result', params);
+    response.render('views/pages/result', params);
 
 }
