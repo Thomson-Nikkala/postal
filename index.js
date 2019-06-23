@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 const app = express()
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 // tell it to use the public directory as one where static files live
 app.use(express.static(path.join(__dirname, 'public')))
@@ -19,8 +19,8 @@ app.get('/', (req, res) => res.render('pages/index'))
 app.get('/postage', getRate);
 
 // start the server listening
-app.listen(port, function () {
-    console.log('Node app is running on port', port);
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
 });
 
 //error handler
