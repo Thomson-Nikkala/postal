@@ -19,11 +19,9 @@ app.get('/', (req, res) => res.render('pages/index'))
 app.get('/postage', getRate);
 
 // start the server listening
-//app.listen(port, function () {
-// console.log('Node app is running on port', PORT);
-//});
-
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, function () {
+    console.log('Node app is running on port', port);
+});
 
 //error handler
 app.use(function (err, req, res, next) {
