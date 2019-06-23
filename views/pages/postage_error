@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Postage Calculation Error</title>
+</head>
+
+<body>
+    <h1>Postage Calculation Error</h1>
+    <p>The value you have entered for weight is invalid.  Please use the back button and try your entry again.  </p>
+</body>
+
+</html>
