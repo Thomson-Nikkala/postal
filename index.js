@@ -11,9 +11,7 @@ app.set('views', path.join(__dirname, 'views'))
 
 // using 'ejs' template engine and default extension is 'ejs'
 app.set('view engine', 'ejs')
-
-//res.render compiles your template, inserts locals, and creates html
-app.get('/', (req, res) => res.render('public/form.html'))
+app.engine('html', require('ejs').renderFile);
 
 // Set up a rule that says requests to '/postage' should be handled by the getPostage function below
 app.get('/postage', getRate);
